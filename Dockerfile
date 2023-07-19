@@ -1,4 +1,4 @@
-ARG BUILD_FROM
+TRARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Install requirements for add-on
@@ -19,5 +19,5 @@ RUN \
 
 COPY . .
 
-CMD python ./bin/main.py
+ENTRYPOINT ["python", "./bin/main.py"]
 
