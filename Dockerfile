@@ -19,5 +19,5 @@ RUN \
 
 COPY . .
 
-ENTRYPOINT ["python", "./bin/main.py"]
+ENTRYPOINT python ./bin/main.py
 
