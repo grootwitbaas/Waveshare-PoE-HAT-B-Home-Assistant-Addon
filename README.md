@@ -1,4 +1,4 @@
-# Waveshare PoE-HAT (B) Home-Assistant Addon
+# Waveshare PoE-HAT (B) Home-Assistant Addon (forked from original)
 
 Specifically for this PoE-HAT: https://www.waveshare.com/wiki/PoE_HAT_(B)
 
