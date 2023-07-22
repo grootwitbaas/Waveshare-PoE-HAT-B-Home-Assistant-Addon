@@ -1,9 +1,5 @@
-FROM docker.io/fluent/fluent-bit:1.6-debug
-SHELL ["busybox", "sh", "-c"]
-
 ARG BUILD_FROM
 FROM $BUILD_FROM
-
 
 # Install requirements for add-on
 
@@ -23,19 +19,6 @@ RUN \
   pip3 install --no-cache-dir smbus
 
 COPY . .
-
-# /bin/sh copy block
-#
-# FROM busybox:1.35.0-uclibc as busybox
-#
-# FROM gcr.io/distroless/base-debian11
-#
-# Now copy the static shell into base image.
-# COPY --from=busybox /bin/sh /bin/sh
-#
-# You may also copy all necessary executables into distroless image.
-# COPY --from=busybox /bin/mkdir /bin/mkdir
-# COPY --from=busybox /bin/cat /bin/cat
 
 CMD python ./bin/main.py
 
