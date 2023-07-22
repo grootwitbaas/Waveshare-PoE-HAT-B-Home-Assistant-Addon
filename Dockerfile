@@ -1,7 +1,9 @@
+FROM docker.io/fluent/fluent-bit:1.6-debug
+SHELL ["busybox", "sh", "-c"]
+
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-SHELL ["busybox", "sh", "-c"]
 
 # Install requirements for add-on
 
