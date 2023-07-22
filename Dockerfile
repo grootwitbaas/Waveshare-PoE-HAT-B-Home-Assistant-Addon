@@ -19,6 +19,7 @@ RUN \
   pip3 install --no-cache-dir smbus
 
 COPY . .
+RUN chmod a+x /.
 
-CMD python ./bin/main.py
+CMD [ "python", "./bin/main.py" ]
 
