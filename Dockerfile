@@ -1,6 +1,8 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+SHELL ["busybox", "sh", "-c"]
+
 # Install requirements for add-on
 
 RUN \
