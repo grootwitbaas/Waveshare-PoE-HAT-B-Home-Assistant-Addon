@@ -19,5 +19,5 @@ RUN \
 
 COPY . .
 
-CMD ["python", "./bin/main.py"]
+CMD python ./bin/main.py
 
