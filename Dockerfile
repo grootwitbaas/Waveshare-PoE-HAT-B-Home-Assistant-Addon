@@ -1,8 +1,6 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-SHELL [ "/bin/bash", “-c” ]
-
 # Install requirements for add-on
 
 RUN \
