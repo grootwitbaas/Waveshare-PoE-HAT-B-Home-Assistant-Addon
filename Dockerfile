@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-COPY rootfs /
+SHELL ["/bin/bash", “-o”, “pipefail”, “-c”]
 
 # Install requirements for add-on
 
