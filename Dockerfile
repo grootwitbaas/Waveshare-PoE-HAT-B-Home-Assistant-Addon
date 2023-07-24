@@ -1,6 +1,8 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+WORKDIR /
+
 # Install requirements for add-on
 
 RUN \
