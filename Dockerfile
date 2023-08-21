@@ -1,8 +1,6 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-WORKDIR /
-
 # Install requirements for add-on
 
 RUN \
@@ -15,13 +13,13 @@ RUN \
 
 FROM python:3
 RUN \
+  pip install --upgrade pip && \
   pip install --no-cache-dir pillow && \
   pip install --no-cache-dir numpy && \
   pip3 install --no-cache-dir RPi.GPIO && \
   pip3 install --no-cache-dir smbus
 
-COPY . .
-RUN chmod a+x /.
+COPY bin/main.py /bin/main.py
+COPY lib/waveshare_POE_HAT_B/ /lib/waveshare_POE_HAT_B/
 
 CMD [ "python", "./bin/main.py" ]
-
