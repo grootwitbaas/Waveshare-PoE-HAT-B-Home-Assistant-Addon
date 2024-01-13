@@ -3,7 +3,7 @@ import sys
 import time
 import math
 import smbus
-import RPi.GPIO as GPIO
+import gpiod as GPIO
 
 import os
 import socket
