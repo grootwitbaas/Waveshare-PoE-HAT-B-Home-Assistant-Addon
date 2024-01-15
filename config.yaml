@@ -1,6 +1,6 @@
 name: "Waveshare PoE HAT (B)"
 description: "PoE HAT Support"
-version: "1.0.3"
+version: "1.0.4"
 slug: "poe_hat"
 init: false
 host_network: true
@@ -15,6 +15,10 @@ devices:
   - /dev/i2c-10
   - /dev/i2c-11
 options:
-  fan_temp: 43
-schema:
-  fan_temp: int
+   fan_temp: 46
+   delta_temp: 5
+   sleep_duration: 30
+ schema:
+   fan_temp: int
+   delta_temp: int
+   sleep_duration: int
