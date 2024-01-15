@@ -23,7 +23,7 @@ f.close()
         
 try:  
     POE.POE_HAT_Display(fan_temp, delta_temp)
-         time.sleep(sleep_duration)
+    time.sleep(sleep_duration)
         
 except KeyboardInterrupt:    
     print("ctrl + c:")
