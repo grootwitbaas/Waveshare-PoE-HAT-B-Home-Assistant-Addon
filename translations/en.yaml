@@ -1,4 +1,10 @@
 configuration:
-  fan_temp:
-    name: Fan Temperature Min
-    description: Temp for the fan to turn on. Restart Addon after change!
+   fan_temp:
+     name: Fan Temperature Min
+     description: Temp for the fan to turn on. Restart Addon after change!
+   delta_temp:
+     name: Fan Temperature Delta
+     description: Turn off fan if temp is decreased . Restart Addon after change!
+   sleep_duration:
+     name: Update screen
+     description: Seconds to update screen. Restart Addon after change!
