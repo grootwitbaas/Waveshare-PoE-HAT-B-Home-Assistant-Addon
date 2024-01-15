@@ -22,9 +22,8 @@ fan_temp = config["fan_temp"]
 f.close()
         
 try:  
-    while(1):
-        POE.POE_HAT_Display(fan_temp)
-        time.sleep(1)
+    POE.POE_HAT_Display(fan_temp, delta_temp)
+         time.sleep(sleep_duration)
         
 except KeyboardInterrupt:    
     print("ctrl + c:")
