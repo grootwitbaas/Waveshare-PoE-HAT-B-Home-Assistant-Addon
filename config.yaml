@@ -18,7 +18,7 @@ options:
    fan_temp: 46
    delta_temp: 5
    sleep_duration: 30
- schema:
+schema:
    fan_temp: int
    delta_temp: int
    sleep_duration: int
