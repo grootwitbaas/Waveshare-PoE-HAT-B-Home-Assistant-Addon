@@ -15,10 +15,10 @@ devices:
   - /dev/i2c-10
   - /dev/i2c-11
 options:
-   fan_temp: 46
-   delta_temp: 5
-   sleep_duration: 30
+  fan_temp: 46
+  delta_temp: 5
+  sleep_duration: 30
 schema:
-   fan_temp: int
-   delta_temp: int
-   sleep_duration: int
+  fan_temp: int
+  delta_temp: int
+  sleep_duration: int
