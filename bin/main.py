@@ -19,13 +19,16 @@ POE = POE_HAT_B.POE_HAT_B()
 f = open("/data/options.json", "r")
 config = json.load(f)
 fan_temp = config["fan_temp"]
+"""
 delta_temp = config["delta_temp"]
 sleep_duration = config["sleep_duration"]
+"""
 f.close()
         
 try:  
-    POE.POE_HAT_Display(fan_temp, delta_temp)
-    time.sleep(sleep_duration)
+    while(1):
+        POE.POE_HAT_Display(fan_temp)
+        time.sleep(1)
         
 except KeyboardInterrupt:    
     print("ctrl + c:")
