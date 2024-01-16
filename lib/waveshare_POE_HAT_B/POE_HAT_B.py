@@ -57,15 +57,14 @@ class POE_HAT_B:
         draw.text((0,1), 'IP:'+str(ip), font = font, fill = 0)
         draw.text((0,15), 'Temp:'+ str(((int)(temp*10))/10.0), font = font, fill = 0)
         
-        """
-        not working in current build, will fix in future build
+        #not working in current build, will fix in future build
         
-        if(temp >= FAN_TEMP):
-            self.FAN_MODE = 1
+        #if(temp >= FAN_TEMP):
+        #    self.FAN_MODE = 1
 
-        elif(temp < FAN_TEMP - DELTA):
-            self.FAN_MODE = 0
-        """
+        #elif(temp < FAN_TEMP - DELTA):
+        #    self.FAN_MODE = 0
+        #
         
         if(temp>=FAN_TEMP):
             self.FAN_MODE = 1
