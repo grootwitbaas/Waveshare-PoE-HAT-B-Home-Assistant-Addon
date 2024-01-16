@@ -46,7 +46,7 @@ class POE_HAT_B:
             temp = (int)(f.read() ) / 1000.0
         return temp
     
-    def POE_HAT_Display(self, FAN_TEMP, DELTA):
+    def POE_HAT_Display(self, FAN_TEMP):
         # show.Init()
         # show.ClearBlack()
         
