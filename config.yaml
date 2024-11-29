@@ -13,7 +13,7 @@ devices:
   - /dev/i2c-0
   - /dev/i2c-1
   - /dev/i2c-10
-  - /dev/i2c-11
+  - /dev/i2c-22
 options:
   fan_temp: 46
   #delta_temp: 5
