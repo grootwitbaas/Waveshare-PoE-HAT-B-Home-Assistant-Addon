@@ -15,9 +15,7 @@ but in the original code it has /dev/i2c-11.
 I am no coder and does not know how to make this changable, so i forked to make the change and for me it works
 Credit goes to original code, i just used a hammer to make the triangle fit in the round hole
 
-this did not work because hassos-overlay changes not included, see below for full instructions ->  Important: Enable I2C first to make this work! As described here: https://www.home-assistant.io/common-tasks/os/#enable-i2c
-
-
+Important: Enable I2C first to make this work! As described here: https://www.home-assistant.io/common-tasks/os/#enable-i2c <- this did not work because hassos-overlay changes not included, see below for full instructions
 
 below some instructions i found, will addapt here because i use a mac, commands are a bit different, but will do this when i have time.
 
